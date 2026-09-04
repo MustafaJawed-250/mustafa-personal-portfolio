@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Mustafa Jawed — AI Web Developer. Building modern websites and integrating artificial intelligence into real-world web experiences." />
+  <meta name="author" content="Muhammad Mustafa Jawed" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Muhammad Mustafa Jawed | AI Web Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">MJ</div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- ========== SCROLL PROGRESS ========== -->
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Page scroll progress"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-text">Mustafa<span class="accent">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero section">
+      <div class="hero-bg">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting reveal">Hello, I'm</p>
+          <h1 class="hero-name reveal">
+            Muhammad Mustafa<br />
+            <span class="gradient-text">Jawed</span>
+          </h1>
+          <h2 class="hero-title reveal">
+            <span class="typing-text" id="typingText">AI Web Developer</span>
+            <span class="cursor-blink">|</span>
+          </h2>
+          <p class="hero-desc reveal">
+            I’m Muhammad Mustafa Jawed, a young AI Web Developer passionate about building modern websites and integrating artificial intelligence into real-world web experiences. I love combining web development, creative design, and AI to build smart and interactive digital products.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary magnetic">View Projects</a>
+            <a href="#contact" class="btn btn-outline magnetic">Get in Touch</a>
+          </div>
+          <div class="hero-socials reveal">
+            <a href="https://github.com/MustafaJawed-250" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon magnetic">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mustafa-jawed-a66b63400/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon magnetic">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/mustafajawed_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon magnetic">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-initials">MJ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <p>
+              I’m Muhammad Mustafa Jawed, a 15-year-old AI Web Developer with a strong passion for web development, artificial intelligence, and building innovative digital experiences. I started my development journey by learning the fundamentals of HTML, CSS, and JavaScript and gradually moved toward building more advanced and interactive web applications.
+            </p>
+            <p>
+              What interests me most about development is the combination of web development and artificial intelligence. I enjoy integrating AI into websites to make them smarter, more interactive, and more useful. Whether it is an AI chatbot, an AI-powered website builder, or connecting AI APIs to a web application, I love experimenting with new possibilities.
+            </p>
+            <p>
+              I learn primarily by building real projects. Instead of only learning theory, I like taking an idea and turning it into an actual working website. Through my projects, I have explored frontend development, APIs, backend development, databases, authentication, AI integrations, and responsive UI design.
+            </p>
+            <p>
+              My goal is to continue improving as an AI Web Developer and eventually build advanced AI-powered products that solve real problems.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="30">0</span>
+                <span class="stat-label">GitHub Repos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Major Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Years Old</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card glass reveal">
+            <h3>Quick Info</h3>
+            <ul class="info-list">
+              <li><span>Name</span> Muhammad Mustafa Jawed</li>
+              <li><span>Title</span> AI Web Developer</li>
+              <li><span>Age</span> 15 years</li>
+              <li><span>Focus</span> AI + Web Development</li>
+              <li><span>Learning</span> By building real projects</li>
+              <li><span>Email</span> <a href="mailto:mustafajawed250@gmail.com">mustafajawed250@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Technologies I Work With</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glass reveal" data-skill="html">
+            <div class="skill-icon">HTML5</div>
+            <h3>HTML5</h3>
+            <p>Semantic markup & accessibility</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="css">
+            <div class="skill-icon">CSS3</div>
+            <h3>CSS3</h3>
+            <p>Modern layouts & animations</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="js">
+            <div class="skill-icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Interactive web experiences</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="node">
+            <div class="skill-icon">Node</div>
+            <h3>Node.js</h3>
+            <p>Backend & server logic</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="express">
+            <div class="skill-icon">Exp</div>
+            <h3>Express.js</h3>
+            <p>RESTful APIs & routing</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="db">
+            <div class="skill-icon">DB</div>
+            <h3>PostgreSQL / Supabase</h3>
+            <p>Database design & integration</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="api">
+            <div class="skill-icon">API</div>
+            <h3>REST APIs</h3>
+            <p>Third-party & custom APIs</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="ai">
+            <div class="skill-icon">AI</div>
+            <h3>AI Integration</h3>
+            <p>Groq API & conversational AI</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="git">
+            <div class="skill-icon">Git</div>
+            <h3>Git & GitHub</h3>
+            <p>Version control & collaboration</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="responsive">
+            <div class="skill-icon">RWD</div>
+            <h3>Responsive Design</h3>
+            <p>Mobile-first interfaces</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="bootstrap">
+            <div class="skill-icon">BS</div>
+            <h3>Bootstrap</h3>
+            <p>Rapid UI development</p>
+          </div>
+          <div class="skill-card glass reveal" data-skill="fullstack">
+            <div class="skill-icon">FS</div>
+            <h3>Full Stack</h3>
+            <p>Frontend + Backend + AI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="services section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Services</span>
+          <h2 class="section-title">What I Can Do For You</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card glass reveal">
+            <div class="service-icon">🤖</div>
+            <h3>AI-Powered Web Development</h3>
+            <p>Build intelligent websites that leverage AI for smarter interactions, content generation, and automation.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon">💻</div>
+            <h3>Frontend Web Development</h3>
+            <p>Clean, modern, and performant user interfaces using HTML, CSS, and JavaScript.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon">📱</div>
+            <h3>Responsive Website Development</h3>
+            <p>Fully responsive designs that look and work great on every device and screen size.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon">🔌</div>
+            <h3>AI API Integration</h3>
+            <p>Connect Groq and other AI APIs to your applications for real-time intelligent features.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon">⚡</div>
+            <h3>Interactive Web Applications</h3>
+            <p>Dynamic web apps with smooth animations, state management, and engaging user experiences.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon">🚀</div>
+            <h3>Landing Page Development</h3>
+            <p>High-converting, beautiful landing pages optimized for performance and conversion.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon">🛠️</div>
+            <h3>Backend Development</h3>
+            <p>Robust Node.js & Express.js backends with secure APIs and proper architecture.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon">🗄️</div>
+            <h3>Database Integration</h3>
+            <p>PostgreSQL and Supabase integration for scalable data storage and real-time features.</p>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon">💬</div>
+            <h3>AI Chatbot Integration</h3>
+            <p>Custom AI chatbots that understand your brand and help users 24/7.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-desc">Three major projects that showcase my skills in AI integration and modern web development.</p>
+        </div>
+
+        <!-- Project 1: FORGE -->
+        <article class="project-card glass reveal" id="project-1">
+          <div class="project-media">
+            <video
+              class="project-video"
+              src="assets/videos/foorge.mp4"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Screen recording of FORGE AI Website Builder"
+            ></video>
+            <div class="video-overlay">
+              <button class="video-play-btn" aria-label="Play FORGE demo video">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-number">01</span>
+            <h3 class="project-title">FORGE — AI Website Builder</h3>
+            <p class="project-short">An AI-powered website builder that turns natural language prompts into complete, functional websites.</p>
+            <p class="project-full">
+              FORGE is an advanced AI Website Builder that allows users to generate complete websites simply by describing what they want in natural language. Users can type a prompt such as “create an e-commerce website for cars” and the system generates a full website with modern design, responsive layout, and interactive sections. The project demonstrates my ability to combine AI with frontend development to create powerful no-code experiences.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI APIs</span><span>Groq</span>
+            </div>
+            <ul class="project-features">
+              <li>Natural language → complete website</li>
+              <li>Live preview of generated sites</li>
+              <li>Responsive modern UI output</li>
+              <li>AI-powered content & structure generation</li>
+            </ul>
+            <p class="project-role"><strong>Role:</strong> Solo Developer — Designed & developed the entire application and AI integration.</p>
+          </div>
+        </article>
+
+        <!-- Project 2: KINOCAST -->
+        <article class="project-card glass reveal project-reverse" id="project-2">
+          <div class="project-media">
+            <video
+              class="project-video"
+              src="assets/videos/project-2.mp4"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Screen recording of KINOCAST YouTube Clone"
+            ></video>
+            <div class="video-overlay">
+              <button class="video-play-btn" aria-label="Play KINOCAST demo video">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-number">02</span>
+            <h3 class="project-title">KINOCAST — YouTube Clone</h3>
+            <p class="project-short">A full-featured YouTube clone with video browsing, search, and playback experience.</p>
+            <p class="project-full">
+              KINOCAST is a YouTube-inspired video platform that lets users search for videos, browse results, and watch content in a clean modern interface. It integrates the YouTube Data API and demonstrates frontend skills along with backend API routes for a smooth video browsing experience.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>YouTube Data API</span><span>Backend Routes</span>
+            </div>
+            <ul class="project-features">
+              <li>Video search & results</li>
+              <li>Video playback interface</li>
+              <li>Modern UI inspired by YouTube</li>
+              <li>Responsive design</li>
+            </ul>
+            <p class="project-role"><strong>Role:</strong> Solo Developer — Designed the UI, implemented frontend, backend API routes, and YouTube Data API integration.</p>
+          </div>
+        </article>
+
+        <!-- Project 3: AI Assistant -->
+        <article class="project-card glass reveal" id="project-3">
+          <div class="project-media">
+            <video
+              class="project-video"
+              src="assets/videos/project-3.mp4"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Screen recording of AI Assistant chatbot"
+            ></video>
+            <div class="video-overlay">
+              <button class="video-play-btn" aria-label="Play AI Assistant demo video">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-number">03</span>
+            <h3 class="project-title">AI Assistant — AI Chatbot</h3>
+            <p class="project-short">An interactive AI chatbot that allows users to communicate with an AI assistant and ask questions naturally in different languages.</p>
+            <p class="project-full">
+              AI Assistant is an interactive chatbot project focused on creating a simple and modern conversational AI experience. Users can type messages and communicate with the AI through a clean chat interface. It includes message bubbles, conversation history, and multi-language support powered by the Groq API.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Groq API</span><span>REST API</span>
+            </div>
+            <ul class="project-features">
+              <li>AI-powered conversations</li>
+              <li>Modern chat interface</li>
+              <li>User & AI message bubbles</li>
+              <li>Chat history & multi-language support</li>
+            </ul>
+            <p class="project-role"><strong>Role:</strong> Solo Developer — Designed the chatbot interface and integrated the AI functionality.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's Build Something Amazing</h2>
+          <p class="section-desc">Have a project in mind or just want to say hi? Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item glass">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:mustafajawed250@gmail.com">mustafajawed250@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item glass">
+              <div class="contact-icon">🔗</div>
+              <div>
+                <h4>Socials</h4>
+                <div class="contact-socials">
+                  <a href="https://github.com/MustafaJawed-250" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://www.linkedin.com/in/mustafa-jawed-a66b63400/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://www.instagram.com/mustafajawed_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary magnetic" id="submitBtn">
+              <span>Send Message</span>
+            </button>
+            <p class="form-note">This form opens your email client. For a faster reply, email me directly.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Muhammad Mustafa Jawed. Built with passion & AI.</p>
+      <div class="footer-links">
+        <a href="https://github.com/MustafaJawed-250" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/mustafa-jawed-a66b63400/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://www.instagram.com/mustafajawed_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- ========== AI CHATBOT ========== -->
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open AI assistant" aria-expanded="false">
+      <svg class="chat-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+      <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div class="chatbot-window" id="chatbotWindow" role="dialog" aria-label="AI Portfolio Assistant" aria-hidden="true">
+      <div class="chatbot-header">
+        <div class="chatbot-avatar">AI</div>
+        <div>
+          <h4>Mustafa's AI Assistant</h4>
+          <span class="chatbot-status">Online</span>
+        </div>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages" role="log" aria-live="polite">
+        <div class="chat-msg bot">
+          <p>Hey! 👋 I'm Mustafa's AI assistant. Ask me anything about his skills, projects, or how to contact him.</p>
+        </div>
+      </div>
+      <form class="chatbot-input-area" id="chatbotForm">
+        <input
+          type="text"
+          id="chatbotInput"
+          placeholder="Ask me anything..."
+          autocomplete="off"
+          aria-label="Type your message"
+          maxlength="500"
+        />
+        <button type="submit" aria-label="Send message">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
